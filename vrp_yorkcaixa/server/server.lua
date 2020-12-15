@@ -67,7 +67,7 @@ function func.checkRobbery(x,y,z) --id,x,y,z,head
 			timers = os.time()
 			dinheirosujo = {}
 			for l,w in pairs(policia) do
-				local player = vRP.getUserSource(parseInt(w))
+				player = vRP.getUserSource(parseInt(w))
 				if player then
 					async(function()
 						TriggerClientEvent('blip:criar:caixaeletronico',player,x,y,z)
